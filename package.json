@@ -1,0 +1,35 @@
+{
+  "name": "claude-coop",
+  "version": "0.1.0",
+  "description": "Co-op mode for Claude Code — pair program with AI agents together",
+  "type": "module",
+  "bin": {
+    "claude-coop": "./dist/cli.js",
+    "claude-coop-relay": "./dist/relay.js",
+    "claude-coop-mcp": "./dist/mcp.js",
+    "claude-coop-hook": "./dist/hook.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "relay": "ts-node --esm src/relay.ts",
+    "dev:relay": "npx tsx src/relay.ts"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "pair-programming",
+    "mcp"
+  ],
+  "author": "Savar Sareen",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
+    "express": "^5.2.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "zod": "^4.3.6"
+  }
+}
